@@ -1,14 +1,14 @@
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
-public class MyFirstBot : Bot
+public class Geoff : Bot
 {
     // The main method starts our bot
     static void Main(string[] args)
     {
-        new MyFirstBot().Start();
+        new Geoff().Start();
     }
-
+   Geoff() : base(BotInfo.FromFile("Geoff.json")) { }
     // Called when a new round is started -> initialize and do some movement
     public override void Run()
     {
