@@ -3,6 +3,7 @@ using System.Drawing;
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
+
 // ------------------------------------------------------------------
 // MyFirstBot
 // ------------------------------------------------------------------
@@ -52,8 +53,6 @@ public class Geoff : Bot
         // are not turning. Otherwise, scan is called automatically.
         if (bearingFromGun == 0)
             Rescan();
-
-        //Fire(1);
     }
 
     // We were hit by a bullet -> turn perpendicular to the bullet
@@ -64,5 +63,21 @@ public class Geoff : Bot
 
         // Turn 90 degrees to the bullet direction based on the bearing
         TurnRight(90 - bearing);
+
+    }
+    public void HitWallEvent(int turnNumber)
+    {
+        TurnRight(120);
+        Forward(100);
+    }
+    public override void OnHitBot(HitBotEvent e)
+    {
+        // Turn gun to the bullet direction
+        var direction = DirectionTo(e.X, e.Y);
+        var gunBearing = NormalizeRelativeAngle(direction - GunDirection);
+        TurnGunRight(gunBearing);
+
+        // Fire hard
+        Fire(3);
     }
 }
