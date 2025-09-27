@@ -1,7 +1,7 @@
 using System;
-using System.Drawing;
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
+using Robocode.TankRoyale.BotApi.Graphics;
 
 
 // ------------------------------------------------------------------
@@ -23,6 +23,13 @@ public class Geoff : Bot
     // Called when a new round is started -> initialize and do some movement
     public override void Run()
     {
+        GunTurnRate = 15;
+
+        BodyColor = Color.Red;
+        TurretColor = Color.Black;
+        RadarColor = Color.Yellow;
+        BulletColor = Color.Green;
+        ScanColor = Color.Green;
 
         // Repeat while the bot is running
         while (IsRunning)
@@ -45,8 +52,8 @@ public class Geoff : Bot
         TurnGunLeft(bearingFromGun);
 
         // If it is close enough, fire!
-        if (Math.Abs(bearingFromGun) <= 3 && GunHeat == 0)
-            Fire(Math.Min(3 - Math.Abs(bearingFromGun), Energy - .1));
+        if (Math.Abs(bearingFromGun) <= 2 && GunHeat == 0)
+            Fire(2);
 
         // Generates another scan event if we see a bot.
         // We only need to call this if the gun (and therefore radar)
@@ -60,6 +67,7 @@ public class Geoff : Bot
     {
         // Calculate the bearing to the direction of the bullet
         var bearing = CalcBearing(evt.Bullet.Direction);
+        
 
         // Turn 90 degrees to the bullet direction based on the bearing
         TurnRight(90 - bearing);
