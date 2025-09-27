@@ -105,6 +105,7 @@ public class Geoff : Bot
                 TurnLeft(90);
             else
                 TurnRight(180);
+            TurnGunRight(360);
             Ahead(500);
         }  
     }
