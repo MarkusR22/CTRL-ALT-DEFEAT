@@ -1,3 +1,6 @@
 #!/bin/sh
-dotnet build
+if [ ! -d "bin" ]; then
+  dotnet build
+fi
 dotnet run --no-build
+
