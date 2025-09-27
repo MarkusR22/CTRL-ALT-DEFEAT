@@ -1,0 +1,12 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>Geoff</RootNamespace>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>8.0</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Robocode.TankRoyale.BotApi" Version="0.33.1" />
+    </ItemGroup>
+</Project>
