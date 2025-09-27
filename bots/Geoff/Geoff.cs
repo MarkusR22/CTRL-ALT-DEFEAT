@@ -8,7 +8,7 @@ public class Geoff : Bot
     {
         new Geoff().Start();
     }
-   Geoff() : base(BotInfo.FromFile("Geoff.json")) { }
+
     // Called when a new round is started -> initialize and do some movement
     public override void Run()
     {
