@@ -1,0 +1,6 @@
+C:\Users\reina\Desktop\CTRL-ALT-DEFEAT\bots\Geoff\obj\Debug\net6.0\Geoff.csproj.AssemblyReference.cache
+C:\Users\reina\Desktop\CTRL-ALT-DEFEAT\bots\Geoff\obj\Debug\net6.0\Geoff.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reina\Desktop\CTRL-ALT-DEFEAT\bots\Geoff\obj\Debug\net6.0\Geoff.AssemblyInfoInputs.cache
+C:\Users\reina\Desktop\CTRL-ALT-DEFEAT\bots\Geoff\obj\Debug\net6.0\Geoff.AssemblyInfo.cs
+C:\Users\reina\Desktop\CTRL-ALT-DEFEAT\bots\Geoff\obj\Debug\net6.0\Geoff.csproj.CoreCompileInputs.cache
+C:\Users\reina\Desktop\CTRL-ALT-DEFEAT\bots\Geoff\obj\Debug\net6.0\Geoff.sourcelink.json

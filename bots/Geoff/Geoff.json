@@ -1,5 +1,10 @@
 {
   "name": "Geoff",
   "version": "1.0",
-  "authors": [ "«enter your name»" ]
+  "authors": [
+    "Markus",
+    "Reinard"
+  ],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
 }
